@@ -1,0 +1,24 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+        	Console.WriteLine("Digite um tamanho entre P, M ou G:\n");
+        	string tamanho = Console.ReadLine().ToLower();
+        		switch (tamanho) {
+        				case "p" : Console.WriteLine("A esolha de tamanho foi P\n"); break;
+        				case "m": Console.WriteLine("A escolha de tamanho foi M\n"); break;
+        				case "g": Console.WriteLine("A escolha de tamanho foi G\n"); break;
+        				default:
+        		Console.WriteLine("Tamanho inválido, tente novamente!\n");
+        		break;
+        		}
+        	
+        	 Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+    }
+}
