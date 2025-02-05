@@ -1,0 +1,42 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Declarar a variável opcao antes de usá-la
+            int opcao;
+
+            Console.WriteLine("Escolha de 1 a 3 e descubra uma curiosidade sobre C#:\n");
+
+            // Recebe a entrada do usuário
+            if (int.TryParse(Console.ReadLine(), out opcao))
+            {
+                switch (opcao)
+                {
+                    case 1:
+                        Console.WriteLine("O C# foi criado pela Microsoft para substituir o C++\n");
+                        break;
+                    case 2:
+                        Console.WriteLine("O C# suporta programação orientada a objetos e programação funcional\n");
+                        break;
+                    case 3:
+                        Console.WriteLine("O C# tem uma sintaxe semelhante ao C e Java\n");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida. Tente novamente\n");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Tente novamente\n");
+            }
+
+            Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+    }
+}
