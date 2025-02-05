@@ -1,0 +1,18 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Data e hora local\n");
+			
+			DateTime dataAtual = DateTime.Now;
+			Console.WriteLine(dataAtual);
+				
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
