@@ -1,0 +1,24 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+        	Console.WriteLine("Insira um número inteiro:\n");
+        	int numero = Int32.Parse(Console.ReadLine());
+        	
+        	if (numero > 0) {
+        		Console.WriteLine("O número " + numero + " é POSITIVO.");
+        	} else if (numero < 0) {
+        		Console.WriteLine("O número " + numero + " é NEGATIVO." );
+        	} else {
+        		Console.WriteLine("O número é zero.");
+        	}
+      
+            Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+    }
+}
