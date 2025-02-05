@@ -1,0 +1,30 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+        	string opcao;
+        	Console.WriteLine("Escolha uma cor (vermeho, azul ou verde):\n");
+        	string cor = Console.ReadLine().ToLower();
+        	
+        	switch (cor) {
+        		case "vermelho" : Console.WriteLine("Você escolheu a cor VERMELHO\n");
+        		 break;
+        		case "azul": Console.WriteLine("Você escolheu a cor AZUL\n");
+        		break;
+        		case "verde": Console.WriteLine("Você escolheu a cor VERDE\n");
+        		break;
+        	default:
+        		Console.WriteLine("Cor inválida, tente novamente!\n");
+        		break;
+        			                                    
+        	}
+        	
+            Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+    }
+}
