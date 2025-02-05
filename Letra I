@@ -1,0 +1,28 @@
+using System;
+
+namespace ATIVIDADE_4_
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+        	int numeroDia;
+        	Console.WriteLine("Digite um número inteiro de 1 a 7:\n");
+        	if (int.TryParse(Console.ReadLine(), out numeroDia)) {
+        		switch (numeroDia) {
+        				case 1: Console.WriteLine("O dia da semana correspondente é DOMINGO\n"); break;
+        				case 2: Console.WriteLine("O dia da semana correspondene é SEGUNDA\n"); break;
+        				case 3: Console.WriteLine("O dia da semana correspondene é TERÇA\n"); break;
+        				case 4: Console.WriteLine("O dia da semana correspondene é QUARTA\n"); break;
+        				case 5: Console.WriteLine("O dia da semana correspondene é QUINTA\n"); break;
+        				case 6: Console.WriteLine("O dia da semana correspondene é SEXTA\n"); break;
+        				case 7: Console.WriteLine("O dia da semana correspondene é SÁBADO\n"); break;
+        		}
+        	} else {
+        		Console.WriteLine("Número inválido, tente novamente\n");
+        	}
+        	 Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+    }
+}
